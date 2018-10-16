@@ -21,11 +21,13 @@ if (process.env.JAWSDB_URL){
 } else {
   //here rather than using heroku credentials, you want to use your local
     connection = mysql.createConnection({
-    host:'yhrz9vns005e0734.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-    user:'x6uiiynrdjwyd87h',
-    password:'vopt415vuxknd7if',
-    database:'szf6czp8fqw41tw2'
+      port: 3306,
+      host: "localhost",
+      user: "root",
+      password: "root",
+      database: "burger_db"
   });
+}
 
 
 // Make connection.
